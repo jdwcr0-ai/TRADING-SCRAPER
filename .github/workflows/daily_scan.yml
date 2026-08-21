@@ -1,0 +1,55 @@
+name: Daily Financial News Scan
+
+on:
+  schedule:
+    # 07:00 UTC daily = after the London open, before NY open.
+    # Edit this cron to change the time (cron uses UTC).
+    - cron: "0 7 * * 1-5"   # weekdays only
+  workflow_dispatch: {}      # lets you also trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner
+        id: scan
+        run: python main.py
+
+      - name: Commit report to repo
+        run: |
+          git config user.name "news-scanner-bot"
+          git config user.email "actions@github.com"
+          git add reports/
+          git diff --quiet --cached || git commit -m "Daily scan report $(date -u +%F)"
+          git push
+
+      - name: Open a GitHub Issue with today's report
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const files = fs.readdirSync('reports').sort();
+            const latest = files[files.length - 1];
+            const body = fs.readFileSync(`reports/${latest}`, 'utf8');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Daily Scan — ${latest.replace('.md', '')}`,
+              body: body,
+              labels: ['daily-scan']
+            });
