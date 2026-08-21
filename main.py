@@ -23,7 +23,7 @@ from scraper import fetch_all_news
 from entity_matcher import load_stock_watchlist, match_news, affected_forex_pairs
 from sentiment_engine import score_text, bias_label
 from technical_analysis import build_trade_setup
-from report_generator import render_report, save_report
+from report_generator import render_report, save_report, save_json, update_index
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("main")
@@ -76,6 +76,12 @@ def run() -> str:
     out_path = f"reports/{date_str}.md"
     save_report(report, out_path)
     log.info("Report saved to %s", out_path)
+
+    json_path = f"reports/{date_str}.json"
+    save_json(setups, headline_count=len(news), matched_count=len(relevant),
+              path=json_path, date_str=date_str)
+    update_index("reports")
+    log.info("Dashboard data saved to %s (index.json refreshed)", json_path)
 
     print(report)
     return report

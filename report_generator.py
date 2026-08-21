@@ -1,8 +1,12 @@
 """
 report_generator.py — turns the day's matched news + trade setups
-into a markdown report.
+into a markdown report, and a matching JSON file for the local
+dashboard to consume.
 """
 from __future__ import annotations
+import json
+import math
+import os
 from datetime import datetime, timezone
 from typing import List
 
@@ -65,6 +69,56 @@ def render_report(setups: List[TradeSetup], headline_count: int, matched_count: 
 def save_report(content: str, path: str) -> None:
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
+
+
+def _safe(n: float | None) -> float | None:
+    """None/NaN-safe float for JSON (JSON has no NaN)."""
+    if n is None or (isinstance(n, float) and math.isnan(n)):
+        return None
+    return n
+
+
+def save_json(setups: List[TradeSetup], headline_count: int, matched_count: int,
+              path: str, date_str: str) -> None:
+    """Write a structured JSON version of the report for the dashboard."""
+    payload = {
+        "date": date_str,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "headline_count": headline_count,
+        "matched_count": matched_count,
+        "setups": [
+            {
+                "ticker": s.ticker,
+                "bias": s.bias,
+                "confidence": s.confidence,
+                "entry": _safe(s.entry),
+                "stop_loss": _safe(s.stop_loss),
+                "take_profit": _safe(s.take_profit),
+                "risk_reward": s.risk_reward,
+                "last_close": _safe(s.last_close),
+                "atr": _safe(s.atr),
+                "swing_high": _safe(s.swing_high),
+                "swing_low": _safe(s.swing_low),
+                "trend_aligned": s.trend_aligned,
+                "notes": s.notes,
+            }
+            for s in setups
+        ],
+    }
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+
+
+def update_index(reports_dir: str) -> None:
+    """Regenerate reports/index.json — the list of available report dates
+    the dashboard reads to populate its date picker."""
+    dates = sorted(
+        fn[:-5] for fn in os.listdir(reports_dir)
+        if fn.endswith(".json") and fn != "index.json"
+    )
+    index_path = os.path.join(reports_dir, "index.json")
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump({"dates": dates}, f, indent=2)
 
 
 if __name__ == "__main__":

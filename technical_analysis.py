@@ -39,11 +39,18 @@ class TradeSetup:
 def fetch_price_history(ticker: str, days: int = LOOKBACK_DAYS) -> Optional[pd.DataFrame]:
     try:
         df = yf.download(ticker, period=f"{days}d", interval="1d", progress=False, auto_adjust=True)
-        if df.empty or len(df) < ATR_PERIOD + 2:
+        if df.empty:
             return None
         # yfinance sometimes returns MultiIndex columns for a single ticker
         if isinstance(df.columns, pd.MultiIndex):
             df.columns = df.columns.get_level_values(0)
+        # yfinance occasionally returns an incomplete last row (NaN close),
+        # e.g. right after a half-day session or a data-provider hiccup.
+        # Drop any row missing the fields we depend on rather than
+        # silently propagating NaN into every downstream calculation.
+        df = df.dropna(subset=["Close", "High", "Low"])
+        if len(df) < ATR_PERIOD + 2:
+            return None
         return df
     except Exception:
         return None
@@ -81,6 +88,10 @@ def build_trade_setup(ticker: str, news_bias: str, sentiment_strength: float) ->
     notes = []
     last_close = float(df["Close"].iloc[-1])
     atr = compute_atr(df)
+    if not (np.isfinite(last_close) and np.isfinite(atr)):
+        # Shouldn't happen after the dropna in fetch_price_history, but
+        # never emit a setup built on NaN data.
+        return None
     swing_high = float(df["High"].iloc[-SWING_LOOKBACK:].max())
     swing_low = float(df["Low"].iloc[-SWING_LOOKBACK:].min())
     price_trend = compute_trend(df)

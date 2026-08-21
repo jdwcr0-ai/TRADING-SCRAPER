@@ -85,6 +85,31 @@ temporary. GitHub Actions' free tier is the closest equivalent: a
 scheduler that isn't your machine, doesn't need to stay powered on, and
 doesn't require you to do anything once the cron job is committed.
 
+## Viewing results locally (dashboard)
+
+Every run now also writes structured JSON (`reports/YYYY-MM-DD.json` and
+`reports/index.json`) alongside the markdown report, and there's a small
+static dashboard at `dashboard/index.html` that reads them.
+
+```bash
+# from the repo root
+python -m http.server 8000
+```
+
+Then open **http://localhost:8000/dashboard/index.html** in your browser.
+Use the date dropdown (top right) to switch days, click a row to expand
+its ATR/swing/trend detail, and click a column header to sort.
+
+You have to use a local server (not just double-clicking the HTML file) —
+browsers block a plain `file://` page from fetching the JSON files next to
+it. `python -m http.server` is the simplest way around that; it's already
+installed if you have Python.
+
+The dashboard is entirely static (no build step, no dependencies) — it
+just reads whatever's in `reports/`, so it always reflects your latest
+GitHub Actions run once you `git pull` the updated `reports/` folder
+locally, or if you run `main.py` locally yourself.
+
 ## Customizing
 
 - **Watchlist**: edit `FOREX_PAIRS` and `EXTRA_INSTRUMENTS` in `config.py`.
