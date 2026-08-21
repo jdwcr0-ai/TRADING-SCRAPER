@@ -24,6 +24,9 @@ from entity_matcher import load_stock_watchlist, match_news, affected_forex_pair
 from sentiment_engine import score_text, bias_label
 from technical_analysis import build_trade_setup
 from report_generator import render_report, save_report, save_json, update_index
+from outcome_tracker import (
+    load_tracked, save_tracked, check_open_positions, add_new_setups, compute_stats,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("main")
@@ -82,6 +85,18 @@ def run() -> str:
               path=json_path, date_str=date_str)
     update_index("reports")
     log.info("Dashboard data saved to %s (index.json refreshed)", json_path)
+
+    log.info("Checking outcomes of previously tracked setups...")
+    tracked = load_tracked()
+    tracked = check_open_positions(tracked)  # resolve yesterday's/earlier OPEN setups first
+    tracked = add_new_setups(tracked, setups, date_str)  # then log today's as new OPEN entries
+    save_tracked(tracked)
+    stats = compute_stats(tracked)
+    log.info("Track record — overall: %s", stats["OVERALL"])
+
+    with open("reports/track_record.json", "w", encoding="utf-8") as f:
+        import json
+        json.dump({"updated_at": datetime.now(timezone.utc).isoformat(), "stats": stats}, f, indent=2)
 
     print(report)
     return report

@@ -85,6 +85,30 @@ temporary. GitHub Actions' free tier is the closest equivalent: a
 scheduler that isn't your machine, doesn't need to stay powered on, and
 doesn't require you to do anything once the cron job is committed.
 
+## Track record (does it actually work?)
+
+Every setup the scanner generates gets logged to `reports/tracked_setups.json`.
+On each subsequent run, the scanner checks every still-open logged setup
+against real daily price action:
+
+- If a day's Low (for a bullish setup) or High (for a bearish setup)
+  touches the stop-loss, it's logged as a loss.
+- If price reaches the take-profit first, it's logged as a win.
+- If neither happens within 14 days, it's marked expired/unresolved
+  (and noted whether price at least moved the right direction).
+
+**One real limitation, stated plainly:** this uses daily bars, not
+intraday data. If a single day's range touches both the stop and the
+target, there's no way to tell which happened first from daily data
+alone — the checker resolves that conservatively as a loss, so the
+tracked win rate is never flattered by an unresolvable tie.
+
+The dashboard's **Track Record** panel shows win rate by confidence
+tier (HIGH / MEDIUM / LOW), so you can see directly whether the
+confidence scoring actually means anything, or whether e.g. LOW
+setups perform the same as HIGH ones (in which case the confidence
+heuristic needs rethinking).
+
 ## Viewing results locally (dashboard)
 
 Every run now also writes structured JSON (`reports/YYYY-MM-DD.json` and

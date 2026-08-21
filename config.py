@@ -78,3 +78,8 @@ SWING_LOOKBACK = 20         # bars used to find recent swing high/low
 RISK_REWARD_RATIO = 2.0     # TP distance = RR * SL distance
 MIN_SENTIMENT_ABS = 0.25    # |compound sentiment| below this = "no clear bias", skipped
 MAX_HEADLINES_PER_RUN = 300 # safety cap across all feeds
+
+# ── TRACK RECORD ──────────────────────────────────────────────
+TRACKED_SETUPS_PATH = "reports/tracked_setups.json"
+EXPIRY_CALENDAR_DAYS = 14   # a setup neither hitting SL nor TP within this
+                            # many days is marked EXPIRED (unresolved)
