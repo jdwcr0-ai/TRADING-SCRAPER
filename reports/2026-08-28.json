@@ -1,0 +1,444 @@
+{
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T19:19:25.734547+00:00",
+  "headline_count": 180,
+  "matched_count": 86,
+  "setups": [
+    {
+      "ticker": "AMZN",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 265.05999755859375,
+      "stop_loss": 255.02000427246094,
+      "take_profit": 285.1399841308594,
+      "risk_reward": 2.0,
+      "last_close": 265.05999755859375,
+      "atr": 5.804998125348773,
+      "swing_high": 287.20001220703125,
+      "swing_low": 255.02000427246094,
+      "trend_aligned": true,
+      "notes": []
+    },
+    {
+      "ticker": "XYZ",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 83.44999694824219,
+      "stop_loss": 77.2300033569336,
+      "take_profit": 95.88998413085938,
+      "risk_reward": 2.0,
+      "last_close": 83.44999694824219,
+      "atr": 2.62164306640625,
+      "swing_high": 86.91999816894531,
+      "swing_low": 77.2300033569336,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (95.88998) is beyond recent swing resistance (86.92000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "FAST",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 50.0,
+      "stop_loss": 46.97999954223633,
+      "take_profit": 56.040000915527344,
+      "risk_reward": 2.0,
+      "last_close": 50.0,
+      "atr": 0.9832139696393695,
+      "swing_high": 52.91999816894531,
+      "swing_low": 46.97999954223633,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (56.04000) is beyond recent swing resistance (52.92000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "TGT",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 163.24000549316406,
+      "stop_loss": 144.39171758620833,
+      "take_profit": 200.93658130707553,
+      "risk_reward": 2.0,
+      "last_close": 163.24000549316406,
+      "atr": 5.406161260915407,
+      "swing_high": 170.75,
+      "swing_low": 144.39171758620833,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (200.93658) is beyond recent swing resistance (170.75000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "bias": "BULLISH",
+      "confidence": "LOW",
+      "entry": 458.3200988769531,
+      "stop_loss": 407.4800109863281,
+      "take_profit": 560.0002746582031,
+      "risk_reward": 2.0,
+      "last_close": 458.3200988769531,
+      "atr": 31.504525320870535,
+      "swing_high": 564.6599731445312,
+      "swing_low": 407.4800109863281,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BULLISH) conflicts with the price trend (BEARISH) \u2014 treat this setup with extra caution."
+      ]
+    },
+    {
+      "ticker": "BBY",
+      "bias": "BULLISH",
+      "confidence": "HIGH",
+      "entry": 82.45999908447266,
+      "stop_loss": 76.69999694824219,
+      "take_profit": 93.9800033569336,
+      "risk_reward": 2.0,
+      "last_close": 82.45999908447266,
+      "atr": 3.4564296177455356,
+      "swing_high": 90.26000213623047,
+      "swing_low": 76.69999694824219,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (93.98000) is beyond recent swing resistance (90.26000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "DLR",
+      "bias": "BULLISH",
+      "confidence": "HIGH",
+      "entry": 185.07000732421875,
+      "stop_loss": 182.59268624441964,
+      "take_profit": 190.02464948381697,
+      "risk_reward": 2.0,
+      "last_close": 185.07000732421875,
+      "atr": 4.954642159598214,
+      "swing_high": 201.55999755859375,
+      "swing_low": 184.22000122070312,
+      "trend_aligned": true,
+      "notes": []
+    },
+    {
+      "ticker": "STX",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 829.4550170898438,
+      "stop_loss": 761.7999877929688,
+      "take_profit": 964.7650756835938,
+      "risk_reward": 2.0,
+      "last_close": 829.4550170898438,
+      "atr": 55.50224086216518,
+      "swing_high": 1013.989990234375,
+      "swing_low": 761.7999877929688,
+      "trend_aligned": true,
+      "notes": []
+    },
+    {
+      "ticker": "BALL",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 63.68000030517578,
+      "stop_loss": 60.79999923706055,
+      "take_profit": 69.44000244140625,
+      "risk_reward": 2.0,
+      "last_close": 63.68000030517578,
+      "atr": 1.1428574153355189,
+      "swing_high": 66.06999969482422,
+      "swing_low": 60.79999923706055,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (69.44000) is beyond recent swing resistance (66.07000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "AIZ",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 286.7200012207031,
+      "stop_loss": 274.3599853515625,
+      "take_profit": 311.4400329589844,
+      "risk_reward": 2.0,
+      "last_close": 286.7200012207031,
+      "atr": 5.820005144391741,
+      "swing_high": 303.94000244140625,
+      "swing_low": 274.3599853515625,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (311.44003) is beyond recent swing resistance (303.94000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "AXP",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 333.5299987792969,
+      "stop_loss": 330.6876787458147,
+      "take_profit": 339.2146388462612,
+      "risk_reward": 2.0,
+      "last_close": 333.5299987792969,
+      "atr": 5.684640066964286,
+      "swing_high": 352.489990234375,
+      "swing_low": 331.1499938964844,
+      "trend_aligned": true,
+      "notes": []
+    },
+    {
+      "ticker": "DAL",
+      "bias": "BULLISH",
+      "confidence": "HIGH",
+      "entry": 80.44000244140625,
+      "stop_loss": 79.28482328142438,
+      "take_profit": 82.75036076136999,
+      "risk_reward": 2.0,
+      "last_close": 80.44000244140625,
+      "atr": 2.310358319963728,
+      "swing_high": 95.01000213623047,
+      "swing_low": 79.88999938964844,
+      "trend_aligned": true,
+      "notes": []
+    },
+    {
+      "ticker": "V",
+      "bias": "BULLISH",
+      "confidence": "HIGH",
+      "entry": 382.19000244140625,
+      "stop_loss": 358.04998779296875,
+      "take_profit": 430.47003173828125,
+      "risk_reward": 2.0,
+      "last_close": 382.19000244140625,
+      "atr": 5.988573346819196,
+      "swing_high": 385.57000732421875,
+      "swing_low": 358.04998779296875,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (430.47003) is beyond recent swing resistance (385.57001) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "ROP",
+      "bias": "BEARISH",
+      "confidence": "LOW",
+      "entry": 427.29998779296875,
+      "stop_loss": 432.3276672363281,
+      "take_profit": 417.24462890625,
+      "risk_reward": 2.0,
+      "last_close": 427.29998779296875,
+      "atr": 10.05535888671875,
+      "swing_high": 427.3500061035156,
+      "swing_low": 386.2300109863281,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BEARISH) conflicts with the price trend (BULLISH) \u2014 treat this setup with extra caution."
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "bias": "BULLISH",
+      "confidence": "LOW",
+      "entry": 89.6050033569336,
+      "stop_loss": 85.13999938964844,
+      "take_profit": 98.5350112915039,
+      "risk_reward": 2.0,
+      "last_close": 89.6050033569336,
+      "atr": 4.690713609967913,
+      "swing_high": 107.56999969482422,
+      "swing_low": 85.13999938964844,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BULLISH) conflicts with the price trend (BEARISH) \u2014 treat this setup with extra caution."
+      ]
+    },
+    {
+      "ticker": "CHTR",
+      "bias": "BULLISH",
+      "confidence": "HIGH",
+      "entry": 153.73500061035156,
+      "stop_loss": 142.33999633789062,
+      "take_profit": 176.52500915527344,
+      "risk_reward": 2.0,
+      "last_close": 153.73500061035156,
+      "atr": 7.532139369419643,
+      "swing_high": 159.2899932861328,
+      "swing_low": 142.33999633789062,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (176.52501) is beyond recent swing resistance (159.28999) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "BA",
+      "bias": "BEARISH",
+      "confidence": "MEDIUM",
+      "entry": 208.94500732421875,
+      "stop_loss": 241.08999633789062,
+      "take_profit": 144.655029296875,
+      "risk_reward": 2.0,
+      "last_close": 208.94500732421875,
+      "atr": 4.354264395577567,
+      "swing_high": 241.08999633789062,
+      "swing_low": 207.5500030517578,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (144.65503) is beyond recent swing support (207.55000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "IRM",
+      "bias": "BEARISH",
+      "confidence": "MEDIUM",
+      "entry": 117.2699966430664,
+      "stop_loss": 130.0500030517578,
+      "take_profit": 91.7099838256836,
+      "risk_reward": 2.0,
+      "last_close": 117.2699966430664,
+      "atr": 3.914644513811384,
+      "swing_high": 130.0500030517578,
+      "swing_low": 116.18499755859375,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (91.70998) is beyond recent swing support (116.18500) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "MLM",
+      "bias": "BEARISH",
+      "confidence": "MEDIUM",
+      "entry": 532.030029296875,
+      "stop_loss": 561.8800048828125,
+      "take_profit": 472.330078125,
+      "risk_reward": 2.0,
+      "last_close": 532.030029296875,
+      "atr": 11.781420026506696,
+      "swing_high": 561.8800048828125,
+      "swing_low": 522.1900024414062,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (472.33008) is beyond recent swing support (522.19000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "META",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 576.0750122070312,
+      "stop_loss": 537.27001953125,
+      "take_profit": 653.6849975585938,
+      "risk_reward": 2.0,
+      "last_close": 576.0750122070312,
+      "atr": 18.678562709263392,
+      "swing_high": 612.4299926757812,
+      "swing_low": 537.27001953125,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BULLISH) conflicts with the price trend (BEARISH) \u2014 treat this setup with extra caution.",
+        "Calculated target (653.68500) is beyond recent swing resistance (612.42999) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "LYV",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 180.5500030517578,
+      "stop_loss": 174.82000732421875,
+      "take_profit": 192.00999450683594,
+      "risk_reward": 2.0,
+      "last_close": 180.5500030517578,
+      "atr": 3.938573564801897,
+      "swing_high": 189.25,
+      "swing_low": 174.82000732421875,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (192.00999) is beyond recent swing resistance (189.25000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "ACGL",
+      "bias": "BEARISH",
+      "confidence": "LOW",
+      "entry": 98.36499786376953,
+      "stop_loss": 101.95999908447266,
+      "take_profit": 91.17499542236328,
+      "risk_reward": 2.0,
+      "last_close": 98.36499786376953,
+      "atr": 1.7167854309082031,
+      "swing_high": 101.95999908447266,
+      "swing_low": 96.94999694824219,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BEARISH) conflicts with the price trend (BULLISH) \u2014 treat this setup with extra caution.",
+        "Calculated target (91.17500) is beyond recent swing support (96.95000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "EXE",
+      "bias": "BULLISH",
+      "confidence": "HIGH",
+      "entry": 98.49500274658203,
+      "stop_loss": 89.9793993845116,
+      "take_profit": 115.5262094707229,
+      "risk_reward": 2.0,
+      "last_close": 98.49500274658203,
+      "atr": 2.2128915603121877,
+      "swing_high": 99.41999816894531,
+      "swing_low": 89.9793993845116,
+      "trend_aligned": true,
+      "notes": [
+        "Calculated target (115.52621) is beyond recent swing resistance (99.42000) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "RL",
+      "bias": "BULLISH",
+      "confidence": "MEDIUM",
+      "entry": 354.92999267578125,
+      "stop_loss": 349.9249921526228,
+      "take_profit": 364.93999372209817,
+      "risk_reward": 2.0,
+      "last_close": 354.92999267578125,
+      "atr": 10.010001046316964,
+      "swing_high": 411.19000244140625,
+      "swing_low": 350.010009765625,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BULLISH) conflicts with the price trend (BEARISH) \u2014 treat this setup with extra caution."
+      ]
+    },
+    {
+      "ticker": "RCL",
+      "bias": "BEARISH",
+      "confidence": "LOW",
+      "entry": 280.9700012207031,
+      "stop_loss": 334.0,
+      "take_profit": 174.91000366210938,
+      "risk_reward": 2.0,
+      "last_close": 280.9700012207031,
+      "atr": 7.651068551199777,
+      "swing_high": 334.0,
+      "swing_low": 279.69500732421875,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BEARISH) conflicts with the price trend (BULLISH) \u2014 treat this setup with extra caution.",
+        "Calculated target (174.91000) is beyond recent swing support (279.69501) \u2014 consider scaling out there first."
+      ]
+    },
+    {
+      "ticker": "SWK",
+      "bias": "BEARISH",
+      "confidence": "MEDIUM",
+      "entry": 98.05999755859375,
+      "stop_loss": 104.68000030517578,
+      "take_profit": 84.81999206542969,
+      "risk_reward": 2.0,
+      "last_close": 98.05999755859375,
+      "atr": 2.5367845807756697,
+      "swing_high": 104.68000030517578,
+      "swing_low": 95.33000183105469,
+      "trend_aligned": false,
+      "notes": [
+        "News sentiment (BEARISH) conflicts with the price trend (BULLISH) \u2014 treat this setup with extra caution.",
+        "Calculated target (84.81999) is beyond recent swing support (95.33000) \u2014 consider scaling out there first."
+      ]
+    }
+  ]
+}
