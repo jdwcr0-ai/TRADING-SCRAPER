@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-08-31T14:56:28.900471+00:00",
+  "updated_at": "2026-09-01T12:26:45.492496+00:00",
   "stats": {
     "HIGH": {
       "resolved": 8,
       "wins": 1,
       "win_rate": 0.125,
-      "open": 30,
+      "open": 33,
       "expired": 0
     },
     "MEDIUM": {
-      "resolved": 6,
+      "resolved": 7,
       "wins": 2,
-      "win_rate": 0.333,
-      "open": 79,
+      "win_rate": 0.286,
+      "open": 86,
       "expired": 0
     },
     "LOW": {
-      "resolved": 10,
+      "resolved": 12,
       "wins": 3,
-      "win_rate": 0.3,
-      "open": 51,
+      "win_rate": 0.25,
+      "open": 55,
       "expired": 0
     },
     "OVERALL": {
-      "resolved": 24,
+      "resolved": 27,
       "wins": 6,
-      "win_rate": 0.25,
-      "open": 160,
+      "win_rate": 0.222,
+      "open": 174,
       "expired": 0
     }
   }
