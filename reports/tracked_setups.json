@@ -3543,10 +3543,10 @@
     "stop_loss": 104.68000030517578,
     "take_profit": 82.72000122070312,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 88.7750015258789,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "INTU",
@@ -3582,10 +3582,10 @@
     "stop_loss": 76.69999694824219,
     "take_profit": 117.40999603271484,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 93.08000183105469,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "TSLA",
@@ -3595,10 +3595,10 @@
     "stop_loss": 384.0400085449219,
     "take_profit": 294.1599426269531,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 376.0780944824219,
+    "note": "Neither level hit within 14 days. Price did not move in the predicted direction."
   },
   {
     "ticker": "NVDA",
@@ -3608,10 +3608,10 @@
     "stop_loss": 207.25,
     "take_profit": 276.5800018310547,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 224.50999450683594,
+    "note": "Neither level hit within 14 days. Price did not move in the predicted direction."
   },
   {
     "ticker": "MU",
@@ -3621,10 +3621,10 @@
     "stop_loss": 844.6199951171875,
     "take_profit": 1360.5300903320312,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 1059.6300048828125,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "APP",
@@ -3634,10 +3634,10 @@
     "stop_loss": 350.2799987792969,
     "take_profit": 261.1199951171875,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 315.6600036621094,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "IBM",
@@ -3660,10 +3660,10 @@
     "stop_loss": 432.7300109863281,
     "take_profit": 208.23995971679688,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 357.2749938964844,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "PYPL",
@@ -3673,10 +3673,10 @@
     "stop_loss": 62.57543662960658,
     "take_profit": 39.72912399420481,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 52.529998779296875,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "PG",
@@ -3699,10 +3699,10 @@
     "stop_loss": 101.58000183105469,
     "take_profit": 91.1399917602539,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 96.86000061035156,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "GPC",
@@ -3712,9 +3712,9 @@
     "stop_loss": 128.40048029170805,
     "take_profit": 157.43904490974796,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 128.40048029170805,
     "note": null
   },
   {
@@ -3777,10 +3777,10 @@
     "stop_loss": 237.11000061035156,
     "take_profit": 162.52999877929688,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 198.85499572753906,
+    "note": "Neither level hit within 14 days. Price moved in the predicted direction but did not reach target."
   },
   {
     "ticker": "IRM",
@@ -3816,10 +3816,10 @@
     "stop_loss": 196.66000366210938,
     "take_profit": 154.26998901367188,
     "date_opened": "2026-09-07",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
-    "note": null
+    "status": "EXPIRED",
+    "date_resolved": "2026-09-21",
+    "exit_price": 186.67999267578125,
+    "note": "Neither level hit within 14 days. Price did not move in the predicted direction."
   },
   {
     "ticker": "EURGBP=X",
@@ -3855,9 +3855,9 @@
     "stop_loss": 85.13999938964844,
     "take_profit": 117.12001037597656,
     "date_opened": "2026-09-08",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_TP",
+    "date_resolved": "2026-09-21",
+    "exit_price": 117.12001037597656,
     "note": null
   },
   {
@@ -5025,9 +5025,9 @@
     "stop_loss": 440.5,
     "take_profit": 582.5664978027344,
     "date_opened": "2026-09-14",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_TP",
+    "date_resolved": "2026-09-21",
+    "exit_price": 582.5664978027344,
     "note": null
   },
   {
@@ -5064,9 +5064,9 @@
     "stop_loss": 85.13999938964844,
     "take_profit": 119.0999984741211,
     "date_opened": "2026-09-14",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_TP",
+    "date_resolved": "2026-09-21",
+    "exit_price": 119.0999984741211,
     "note": null
   },
   {
@@ -5246,9 +5246,9 @@
     "stop_loss": 48.369998931884766,
     "take_profit": 56.23000717163086,
     "date_opened": "2026-09-15",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 48.369998931884766,
     "note": null
   },
   {
@@ -5402,9 +5402,9 @@
     "stop_loss": 168.0399932861328,
     "take_profit": 174.64002990722656,
     "date_opened": "2026-09-16",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 168.0399932861328,
     "note": null
   },
   {
@@ -5480,9 +5480,9 @@
     "stop_loss": 167.82254857535756,
     "take_profit": 178.31492482194113,
     "date_opened": "2026-09-16",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 167.82254857535756,
     "note": null
   },
   {
@@ -5610,9 +5610,9 @@
     "stop_loss": 245.4764278956822,
     "take_profit": 254.30713871547152,
     "date_opened": "2026-09-16",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_TP",
+    "date_resolved": "2026-09-18",
+    "exit_price": 254.30713871547152,
     "note": null
   },
   {
@@ -5740,9 +5740,9 @@
     "stop_loss": 315.70001220703125,
     "take_profit": 238.38995361328125,
     "date_opened": "2026-09-17",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 315.70001220703125,
     "note": null
   },
   {
@@ -5753,9 +5753,9 @@
     "stop_loss": 242.97536523001534,
     "take_profit": 251.92928968157088,
     "date_opened": "2026-09-17",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_TP",
+    "date_resolved": "2026-09-18",
+    "exit_price": 251.92928968157088,
     "note": null
   },
   {
@@ -5792,9 +5792,9 @@
     "stop_loss": 48.59000015258789,
     "take_profit": 52.09999465942383,
     "date_opened": "2026-09-17",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 48.59000015258789,
     "note": null
   },
   {
@@ -5844,9 +5844,9 @@
     "stop_loss": 254.33364268711634,
     "take_profit": 269.92271096365795,
     "date_opened": "2026-09-17",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-21",
+    "exit_price": 254.33364268711634,
     "note": null
   },
   {
@@ -5857,9 +5857,9 @@
     "stop_loss": 87.4263550894601,
     "take_profit": 91.36728341238839,
     "date_opened": "2026-09-17",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 87.4263550894601,
     "note": null
   },
   {
@@ -5896,9 +5896,9 @@
     "stop_loss": 131.29928643362862,
     "take_profit": 142.40142713274275,
     "date_opened": "2026-09-17",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-18",
+    "exit_price": 131.29928643362862,
     "note": null
   },
   {
@@ -6130,9 +6130,9 @@
     "stop_loss": 1042.4000244140625,
     "take_profit": 847.699951171875,
     "date_opened": "2026-09-18",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-21",
+    "exit_price": 1042.4000244140625,
     "note": null
   },
   {
@@ -6156,9 +6156,9 @@
     "stop_loss": 129.73356737409318,
     "take_profit": 140.64285060337613,
     "date_opened": "2026-09-18",
-    "status": "OPEN",
-    "date_resolved": null,
-    "exit_price": null,
+    "status": "HIT_SL",
+    "date_resolved": "2026-09-21",
+    "exit_price": 129.73356737409318,
     "note": null
   },
   {
@@ -6234,6 +6234,240 @@
     "stop_loss": 251.8800048828125,
     "take_profit": 232.29000854492188,
     "date_opened": "2026-09-18",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "GBPJPY=X",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 210.64999389648438,
+    "stop_loss": 217.4600067138672,
+    "take_profit": 197.02996826171875,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "EURJPY=X",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 180.625,
+    "stop_loss": 185.9810028076172,
+    "take_profit": 169.91299438476562,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "ARES",
+    "bias": "BULLISH",
+    "confidence": "MEDIUM",
+    "entry": 125.69499969482422,
+    "stop_loss": 121.29000091552734,
+    "take_profit": 134.50499725341797,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "STLD",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 233.0050048828125,
+    "stop_loss": 251.8800048828125,
+    "take_profit": 195.2550048828125,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "CLX",
+    "bias": "BULLISH",
+    "confidence": "LOW",
+    "entry": 82.87000274658203,
+    "stop_loss": 81.7171459197998,
+    "take_profit": 85.17571640014648,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "KMB",
+    "bias": "BULLISH",
+    "confidence": "LOW",
+    "entry": 96.9000015258789,
+    "stop_loss": 95.798873809742,
+    "take_profit": 99.10225695815271,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "NVDA",
+    "bias": "BULLISH",
+    "confidence": "HIGH",
+    "entry": 224.4199981689453,
+    "stop_loss": 207.01835779182306,
+    "take_profit": 259.2232789231898,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "EXE",
+    "bias": "BULLISH",
+    "confidence": "MEDIUM",
+    "entry": 85.55999755859375,
+    "stop_loss": 84.3193907056536,
+    "take_profit": 88.04121126447404,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "BR",
+    "bias": "BEARISH",
+    "confidence": "LOW",
+    "entry": 162.76499938964844,
+    "stop_loss": 185.76582753244617,
+    "take_profit": 116.76334310405298,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "JKHY",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 154.11000061035156,
+    "stop_loss": 174.356028348966,
+    "take_profit": 113.6179451331227,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "HSIC",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 85.20999908447266,
+    "stop_loss": 91.69000244140625,
+    "take_profit": 72.24999237060547,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "AMZN",
+    "bias": "BULLISH",
+    "confidence": "LOW",
+    "entry": 255.56500244140625,
+    "stop_loss": 244.3000030517578,
+    "take_profit": 278.0950012207031,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "BBY",
+    "bias": "BULLISH",
+    "confidence": "HIGH",
+    "entry": 93.19000244140625,
+    "stop_loss": 75.90354748805869,
+    "take_profit": 127.76291234810137,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "FRT",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 110.70999908447266,
+    "stop_loss": 118.8499984741211,
+    "take_profit": 94.43000030517578,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "ORCL",
+    "bias": "BEARISH",
+    "confidence": "LOW",
+    "entry": 146.88499450683594,
+    "stop_loss": 170.6999969482422,
+    "take_profit": 99.25498962402344,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "BA",
+    "bias": "BEARISH",
+    "confidence": "MEDIUM",
+    "entry": 198.85499572753906,
+    "stop_loss": 215.2899932861328,
+    "take_profit": 165.98500061035156,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "IRM",
+    "bias": "BULLISH",
+    "confidence": "LOW",
+    "entry": 114.69999694824219,
+    "stop_loss": 109.12999725341797,
+    "take_profit": 125.83999633789062,
+    "date_opened": "2026-09-21",
+    "status": "OPEN",
+    "date_resolved": null,
+    "exit_price": null,
+    "note": null
+  },
+  {
+    "ticker": "META",
+    "bias": "BULLISH",
+    "confidence": "MEDIUM",
+    "entry": 706.1304931640625,
+    "stop_loss": 546.2999877929688,
+    "take_profit": 1025.79150390625,
+    "date_opened": "2026-09-21",
     "status": "OPEN",
     "date_resolved": null,
     "exit_price": null,
